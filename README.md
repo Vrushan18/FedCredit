@@ -70,6 +70,19 @@ FedCredit-Code/
     │   └── global_latest.json
     └── tests/
         └── test_endpoints.py     # 9-stage automated contract test suite
+│
+└── customer-portal/              # Customer Facing Web Portal (Laptop 4: Aditya Tambe — Port 5173)
+    ├── .env.example              # Template environment with VITE_HEAD_OFFICE_URL
+    ├── package.json              # React 19, Vite, Tailwind CSS v4 dependencies
+    ├── src/
+    │   ├── components/
+    │   │   └── LoanApplicationForm.jsx # Interactive loan form & live DTI calculator
+    │   ├── utils/
+    │   │   ├── validation.js     # Verhoeff Aadhaar & PAN individual 'P' validator
+    │   │   └── biometricCheck.js # In-browser canvas fingerprint ridge variance check
+    │   ├── services/
+    │   │   └── api.js            # Two-step consortium submission dispatcher
+    │   └── pages/                # Multi-bank loan application pages & dashboard
 ```
 
 ---
