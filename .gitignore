@@ -43,6 +43,9 @@ venv.bak/
 *.sqlite
 *.sqlite3
 
+# Uploads and temporary data
+uploads/
+
 # Logs and runtime files
 *.log
 *.pid

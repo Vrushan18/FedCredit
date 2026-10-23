@@ -1,0 +1,46 @@
+{
+  "model_version": "v1-local",
+  "coef": [
+    [
+      -0.08237172475156936,
+      -0.29940607142251385,
+      -0.08370181288233725,
+      0.3209443573198296,
+      0.39461989324924107,
+      0.10705467980027535,
+      1.221081370127971,
+      0.3942796825382895,
+      -0.41611527361262385,
+      -0.08382517799161991,
+      -0.18514129737812648,
+      -0.09882800643882417,
+      -0.033110122664325906,
+      0.13562158722871961,
+      -0.15028457532359313,
+      -0.08846101642642012,
+      -0.05573993281963657
+    ]
+  ],
+  "intercept": [
+    -0.30457994515491926
+  ],
+  "features": [
+    "age",
+    "annual_income",
+    "employment_length_years",
+    "loan_amount",
+    "loan_percent_income",
+    "credit_history_length_years",
+    "previous_default",
+    "home_ownership_RENT",
+    "home_ownership_OWN",
+    "home_ownership_MORTGAGE",
+    "home_ownership_OTHER",
+    "loan_purpose_EDUCATION",
+    "loan_purpose_MEDICAL",
+    "loan_purpose_VENTURE",
+    "loan_purpose_PERSONAL",
+    "loan_purpose_DEBT_CONSOLIDATION",
+    "loan_purpose_HOME_IMPROVEMENT"
+  ]
+}

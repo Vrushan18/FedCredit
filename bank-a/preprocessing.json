@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "dataset_fx_rate": 1.0,
+  "currency": "INR",
+  "features": [
+    "age",
+    "annual_income",
+    "employment_length_years",
+    "loan_amount",
+    "loan_percent_income",
+    "credit_history_length_years",
+    "previous_default",
+    "home_ownership_RENT",
+    "home_ownership_OWN",
+    "home_ownership_MORTGAGE",
+    "home_ownership_OTHER",
+    "loan_purpose_EDUCATION",
+    "loan_purpose_MEDICAL",
+    "loan_purpose_VENTURE",
+    "loan_purpose_PERSONAL",
+    "loan_purpose_DEBT_CONSOLIDATION",
+    "loan_purpose_HOME_IMPROVEMENT"
+  ],
+  "feature_order": [
+    "age",
+    "annual_income",
+    "employment_length_years",
+    "loan_amount",
+    "loan_percent_income",
+    "credit_history_length_years",
+    "previous_default",
+    "home_ownership_RENT",
+    "home_ownership_OWN",
+    "home_ownership_MORTGAGE",
+    "home_ownership_OTHER",
+    "loan_purpose_EDUCATION",
+    "loan_purpose_MEDICAL",
+    "loan_purpose_VENTURE",
+    "loan_purpose_PERSONAL",
+    "loan_purpose_DEBT_CONSOLIDATION",
+    "loan_purpose_HOME_IMPROVEMENT"
+  ],
+  "clip_limits": {
+    "age": {"min": 18, "max": 100},
+    "employment_length_years": {"min": 0, "max": 60},
+    "loan_percent_income": {"min": 0.0, "max": 1.0}
+  },
+  "imputation_medians": {
+    "age": 27.0,
+    "annual_income": 650000.0,
+    "employment_length_years": 4.0,
+    "loan_amount": 350000.0,
+    "loan_percent_income": 0.17,
+    "credit_history_length_years": 5.0,
+    "previous_default": 0
+  },
+  "standardization": {
+    "mean": {
+      "age": 27.7,
+      "annual_income": 650000.0,
+      "employment_length_years": 4.8,
+      "loan_amount": 350000.0,
+      "loan_percent_income": 0.17,
+      "credit_history_length_years": 5.8
+    },
+    "std": {
+      "age": 6.3,
+      "annual_income": 350000.0,
+      "employment_length_years": 4.1,
+      "loan_amount": 250000.0,
+      "loan_percent_income": 0.10,
+      "credit_history_length_years": 4.0
+    }
+  },
+  "categorical": {
+    "home_ownership": [
+      "RENT",
+      "OWN",
+      "MORTGAGE",
+      "OTHER"
+    ],
+    "loan_purpose": [
+      "EDUCATION",
+      "MEDICAL",
+      "VENTURE",
+      "PERSONAL",
+      "DEBT_CONSOLIDATION",
+      "HOME_IMPROVEMENT"
+    ]
+  }
+}
