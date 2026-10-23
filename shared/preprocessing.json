@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "dataset_fx_rate": 83.0,
+  "features": [
+    "age",
+    "annual_income",
+    "employment_length_years",
+    "loan_amount",
+    "loan_percent_income",
+    "credit_history_length_years",
+    "previous_default",
+    "home_ownership_RENT",
+    "home_ownership_OWN",
+    "home_ownership_MORTGAGE",
+    "home_ownership_OTHER",
+    "loan_purpose_EDUCATION",
+    "loan_purpose_MEDICAL",
+    "loan_purpose_VENTURE",
+    "loan_purpose_PERSONAL",
+    "loan_purpose_DEBT_CONSOLIDATION",
+    "loan_purpose_HOME_IMPROVEMENT"
+  ],
+  "numeric_features": [
+    "age",
+    "annual_income",
+    "employment_length_years",
+    "loan_amount",
+    "loan_percent_income",
+    "credit_history_length_years"
+  ],
+  "binary_features": [
+    "previous_default"
+  ],
+  "categorical_features": {
+    "home_ownership": [
+      "RENT",
+      "OWN",
+      "MORTGAGE",
+      "OTHER"
+    ],
+    "loan_purpose": [
+      "EDUCATION",
+      "MEDICAL",
+      "VENTURE",
+      "PERSONAL",
+      "DEBT_CONSOLIDATION",
+      "HOME_IMPROVEMENT"
+    ]
+  },
+  "clip_limits": {
+    "age": [18, 100],
+    "employment_length_years": [0, 60]
+  },
+  "imputation_medians": {
+    "age": 27.0,
+    "annual_income": 65000.0,
+    "employment_length_years": 4.0,
+    "loan_amount": 10000.0,
+    "loan_percent_income": 0.15,
+    "credit_history_length_years": 4.0,
+    "previous_default": 0
+  },
+  "normalization_stats": {
+    "age": {
+      "mean": 27.7,
+      "std": 6.3
+    },
+    "annual_income": {
+      "mean": 66074.8,
+      "std": 61983.1
+    },
+    "employment_length_years": {
+      "mean": 4.78,
+      "std": 4.14
+    },
+    "loan_amount": {
+      "mean": 9589.3,
+      "std": 6322.0
+    },
+    "loan_percent_income": {
+      "mean": 0.17,
+      "std": 0.10
+    },
+    "credit_history_length_years": {
+      "mean": 5.79,
+      "std": 4.05
+    }
+  }
+}
